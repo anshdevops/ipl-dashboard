@@ -1,7 +1,6 @@
 package com.example.ipapp.data.entitys;
 
 import lombok.Data;
-
 @Data
 public class MatchInput {
 
