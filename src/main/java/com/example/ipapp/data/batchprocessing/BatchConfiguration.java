@@ -1,4 +1,4 @@
-package com.example.ipapp.data.bastchprocessing;
+package com.example.ipapp.data.batchprocessing;
 
 import com.example.ipapp.data.entitys.Match;
 import com.example.ipapp.data.entitys.MatchInput;

@@ -1,10 +1,9 @@
-package com.example.ipapp.data.bastchprocessing;
+package com.example.ipapp.data.batchprocessing;
 
-import com.example.ipapp.data.entitys.MatchInput;
 import com.example.ipapp.data.entitys.Match;
+import com.example.ipapp.data.entitys.MatchInput;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.batch.item.ItemProcessor;
 
 import java.time.LocalDate;
@@ -29,9 +28,9 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
             firstInningsTeam=matchInp.getToss_winner();
             secondInningsTeam=matchInp.getToss_winner().equals(matchInp.getTeam1()) ? matchInp.getTeam2():matchInp.getTeam1();
         }
-        else{
-            secondInningsTeam=matchInp.getToss_decision();
-            firstInningsTeam=matchInp.getToss_winner().equals(matchInp.getTeam1()) ? matchInp.getTeam2():matchInp.getTeam1();
+        else {
+            secondInningsTeam = matchInp.getToss_winner();
+            firstInningsTeam = matchInp.getToss_winner().equals(matchInp.getTeam1()) ? matchInp.getTeam2() : matchInp.getTeam1();
 
 
         };
