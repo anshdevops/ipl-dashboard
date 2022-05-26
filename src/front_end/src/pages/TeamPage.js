@@ -6,6 +6,7 @@ import {useParams} from "react-router-dom";
 export const TeamPage = () => {
 
     const [team, setTeam] = useState({matches: []});
+
     const {teamName} = useParams();
     useEffect(() => {
 
